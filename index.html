@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="ar">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Abdo Samy - مصمم مواقع</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="abdo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Abdo Samy - مصمم مواقع</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="abdo.css">
+        <!-- رابط أيقونات Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+    </head>  
 <body>
 
-  <!-- الحبل -->
+  <!-- الحبل -->  
   <svg id="ropeLine" width="4" height="120" xmlns="http://www.w3.org/2000/svg">
-    <line x1="2" y1="0" x2="2" y2="120" stroke="#ccc" stroke-width="4"/>
-  </svg>
+    <line x1="2" y1="0" x2="2" y2="120" stroke="#ccc" stroke-width="4"/>  
+  </svg>  
 
   <!-- الكارت -->
   <div class="card" id="draggableCard">
-    <img src="https://i.ibb.co/F4V0S4s4/518611563-1398649224513375-3702718957995049187-n.jpg" alt="Abdo Samy">
+    <img src="https://i.ibb.co/F4V0S4s4/518611563-1398649224513375-3702718957995049187-n.jpg" alt="Abdo Samy">  
     <h1>Abdo Samy</h1>
     <p>مصمم مواقع</p>
-  </div>
+  </div>  
 
 
 
@@ -28,15 +31,90 @@
 
 
 <section class="about">
-  <h2 class="glow-title">About Me</h2>
+  <h2 class="glow-title">About Me</h2>  
   <div class="typewriter-container">
-    <span class="static-text">I'm </span>
+    <span class="static-text">I'm </span>  
     <span class="dynamic-text" id="type-text"></span>
-  </div>
+  </div>  
   <p class="about-desc">
-    A passionate front-end web designer from Egypt. I build clean, responsive websites with smooth animations and focus on user experience.
-  </p>
-</section>
+    A passionate front-end web designer from Egypt. I build clean, responsive websites with smooth animations and focus on user experience.  
+  </p>  
+</section>  
+
+
+
+
+
+<section class="skills">
+  <h2 class="glow-title">My Skills</h2>  
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML">  
+      <p>HTML</p>
+    </div>  
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS">  
+      <p>CSS</p>
+    </div>  
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">  
+      <p>JavaScript</p>
+    </div>  
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="React">  
+      <p>React</p>
+    </div>  
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Git">  
+      <p>Git</p>
+    </div>  
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="VS Code">  
+      <p>VS Code</p>
+    </div>  
+  </div>  
+</section>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="projects">
+  <h2 class="glow-title">My Projects</h2>  
+
+  <div class="projects-glass">
+
+    <!-- مشروع Teba2 -->  
+    <div class="glass-card">
+      <a href="https://abdo10112008.github.io/teba2/" target="_blank">
+        <img   src="https://i.ibb.co/93zQyQ5Z/fdaf914c-2401-46fe-8280-2cf1ec817f44.jpg" alt="Teba2 Website">  
+        <div class="card-overlay">
+          <h3>Teba2</h3>  
+        </div>  
+      </a>  
+    </div>  
+
+    <!-- مشروع Omar Travel -->
+    <div class="glass-card">
+      <a href="https://abdo10112008.github.io/omarr/" target="_blank">
+        <img    src="https://i.ibb.co/1fS44jzG/8ae02de9-717f-4629-8490-2854b2564985.jpg" alt="Omar Travel Website">  
+        <div class="card-overlay">
+          <h3>Omar Travel</h3>  
+        </div>  
+      </a>  
+    </div>  
+
+  </div>  
+</section>  
 
 
 
@@ -52,6 +130,62 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- قسم التواصل -->
+<section class="contact-section">
+  <div class="contact-container">
+    <h2>تواصل معايا</h2>  
+    
+    <form action="https://formsubmit.co/bodysamy550022@gmail.com" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="الاسم" required>  
+      <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+      <textarea name="message" placeholder="رسالتك" rows="5" required></textarea>
+      <button type="submit">إرسال</button>
+    </form>  
+
+    <div class="contact-icons">
+      <a href="mailto:bodysamy550022@gmail.com" target="_blank" title="إيميل">
+        <i class="fas fa-envelope"></i>  
+      </a>  
+      <a href="tel:01029055201" title="اتصال مباشر">
+        <i class="fas fa-phone"></i>  
+      </a>  
+      <a href="https://wa.me/201029055201" target="_blank" title="واتساب">
+        <i class="fab fa-whatsapp"></i>  
+      </a>  
+      <a href="https://www.facebook.com/share/1BGQ5cFj8q/" target="_blank" title="فيسبوك">
+        <i class="fab fa-facebook"></i>  
+      </a>  
+    </div>  
+  </div>  
+</section>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -60,3 +194,4 @@
 
 </body>
 </html>
+
