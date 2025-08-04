@@ -1,0 +1,136 @@
+/* Reset عام */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* SVG Rope */
+#ropeLine {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  z-index: 1;
+}
+
+/* Card Style */
+.card {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  width: 220px;
+  padding: 15px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #1e293b, #334155);
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  cursor: grab;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  border: 2px solid #94a3b8;
+}
+
+.card h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #facc15;
+}
+
+.card p {
+  font-size: 16px;
+  color: #cbd5e1;
+}
+
+/* About Section */
+.about {
+  margin-top: 300px;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.glow-title {
+  font-size: 36px;
+  color: #38bdf8;
+  text-shadow: 0 0 10px #38bdf8, 0 0 20px #38bdf8;
+  margin-bottom: 20px;
+}
+
+/* Typewriter Text */
+.typewriter-container {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.static-text {
+  color: #facc15;
+}
+
+.dynamic-text {
+  color: #22d3ee;
+}
+
+/* About description */
+.about-desc {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #cbd5e1;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .about-desc {
+    max-width: 500px;
+  }
+
+  .typewriter-container {
+    font-size: 26px;
+  }
+
+  .card {
+    position: fixed;
+    top: 100px;
+    left: 60px;
+  }
+
+  #ropeLine {
+    left: 170px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    position: relative;
+    margin: 20px auto;
+    left: 0;
+  }
+
+  #ropeLine {
+    display: none;
+  }
+}
